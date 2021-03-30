@@ -1,15 +1,8 @@
-import { useState, useContext } from 'react';
+import { useContext } from 'react';
 import { Button } from './Button';
 
 import './../styles/sidebar.scss';
 import { GenresContext } from '../contexts/GenresContext';
-
-
-interface GenreResponseProps {
-  id: number;
-  name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
-  title: string;
-}
 
 export function SideBar() {
 
