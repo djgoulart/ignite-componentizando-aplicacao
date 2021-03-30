@@ -1,5 +1,10 @@
 import { render } from 'react-dom'
 
 import { App } from './App'
+import { GenresContextProvider } from './contexts/GenresContext'
 
-render(<App />, document.getElementById('root'))
+render(
+<GenresContextProvider>
+  <App />
+</GenresContextProvider>, 
+document.getElementById('root'))
